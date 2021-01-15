@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {SignUp, Login} from './components/forms';
+import {SignUp, Login} from './components/forms.jsx';
 
 class App extends Component {
   render() {
