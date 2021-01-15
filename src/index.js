@@ -9,6 +9,7 @@ import HomeRecipes from './components/HomeRecipes';
 import SignUpLogin from './SignUpLoginPage';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Home from './home';
+import AddRecipe from './components/AddRecipe';
 
 
 ReactDOM.render(
@@ -16,6 +17,7 @@ ReactDOM.render(
     <Switch>
       <Route path="/" exact component={Home} />
       <Route path="/sign_up_login" component={SignUpLogin} />
+      <Route path="/add_recipe" component={AddRecipe}/>
     </Switch>
 
 
