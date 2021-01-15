@@ -6,12 +6,21 @@ import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import NavBar from './components/NavBar';
 import HomeRecipes from './components/HomeRecipes';
-import SignUpLogin from './sign_up_login';
+import SignUpLogin from './SignUpLoginPage';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import Home from './home';
+
 
 ReactDOM.render(
-  <React.StrictMode>
-    <HomeRecipes />
-  </React.StrictMode>,
+  <Router>
+    <Switch>
+      <Route path="/" exact component={Home} />
+      <Route path="/sign_up_login" component={SignUpLogin} />
+    </Switch>
+
+
+  </Router>
+  ,
   document.getElementById('root')
 );
 
