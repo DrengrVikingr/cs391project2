@@ -3,12 +3,11 @@ import Logo from '../assets/logo-cream.png';
 import './NavBar-Footer.css';
 import Navbar from 'react-bootstrap/Navbar'
 
-
-class NavBar extends Component {
-
+class NavBar extends Component { 
+  
   state = {}
   render() {
-    return (<Navbar bg="secondary">
+    return (<Navbar bg="secondary" >
       <Navbar.Brand href="#home">
         <img
           src={Logo}
@@ -17,18 +16,16 @@ class NavBar extends Component {
           className="d-inline-block align-top"
           alt="React Bootstrap logo"
         />
-        <a class="marmotte" href="../home/index.html">La Marmotte</a>
+        <a class="marmotte" href="../home/index.html" style={{color:'white'}}>La Marmotte</a>
       </Navbar.Brand>
-
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-
         <ul class="navbar-nav"  >
           <li class="nav-item"  >
-            <a class="nav-link " style={{ color: "white", fontSize: 20 }} href="#">Home</a>
+            <a class="nav-link " style={{ color: "white", fontSize: 18}} href="#">Home</a>
           </li>
           <li class="nav-item">
-            <form class="nav-link" style={{ color: "white", fontSize: 20 }} action="../recipe_page/recipe_page.html" method="GET">
-              <label for="recipes" class="label">Categories </label>
+            <form class="nav-link" style={{ color: "white", fontSize: 18 }} action="../recipe_page/recipe_page.html" method="GET">
+              <label for="recipes" class="label">Categories &nbsp;</label>
               <select name="recipes" onchange="this.form.submit()">
                 <option disabled selected value>Select a Recipe</option>
                 <optgroup label="Starters" id="starters">
@@ -41,7 +38,7 @@ class NavBar extends Component {
             </form>
           </li>
           <li class="nav-item">
-            <a class="nav-link" style={{ color: "white", fontSize: 20 }} href="#">Add Recipe </a>
+            <a class="nav-link" style={{ color: "white", fontSize: 18 }} href="#">Add Recipe </a>
           </li>
         </ul>
 
