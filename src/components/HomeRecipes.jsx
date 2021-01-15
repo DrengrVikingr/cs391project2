@@ -7,24 +7,20 @@ import { Container, Row } from 'react-bootstrap';
 
 
 class HomeRecipes extends Component {
-    state = {  }
-    render() { 
+    state = {}
+    render() {
         return (
             <React.Fragment>
                 <Container fluid>
-                    <Row >
-                        <HomeRecipe image = {Babka} author = {this.getAuthor("Babka")} recipe = {this.getRecipe("Babka")}/>
-                    </Row>
-                    <Row> 
-                        <HomeRecipe image = {Brownie} author = {this.getAuthor("Brownie")} recipe = {this.getRecipe("Brownie")} />
-                    </Row> 
-                    <Row>
-                        <HomeRecipe  image = {Profiterol} author = {this.getAuthor("Profiterol")} recipe = {this.getRecipe("Profiterol")} />
-                    </Row>    
+                    <ul className="list-unstyled" >
+                        <HomeRecipe image={Babka} author={this.getAuthor("Babka")} recipe={this.getRecipe("Babka")} />
+                        <HomeRecipe image={Brownie} author={this.getAuthor("Brownie")} recipe={this.getRecipe("Brownie")} />
+                        <HomeRecipe image={Profiterol} author={this.getAuthor("Profiterol")} recipe={this.getRecipe("Profiterol")} />
+                    </ul>
                 </Container>
             </React.Fragment>
 
-          );
+        );
     }
 
     getAuthor(name) {
@@ -41,5 +37,5 @@ class HomeRecipes extends Component {
         else return "";
     }
 }
- 
+
 export default HomeRecipes;
