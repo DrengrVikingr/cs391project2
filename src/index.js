@@ -6,10 +6,10 @@ import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import NavBar from './components/NavBar';
 import HomeRecipes from './components/HomeRecipes';
+import SignUpLogin from './sign_up_login';
 
 ReactDOM.render(
   <React.StrictMode>
-    <NavBar />
     <HomeRecipes />
   </React.StrictMode>,
   document.getElementById('root')

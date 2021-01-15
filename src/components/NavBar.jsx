@@ -1,34 +1,55 @@
 import React, { Component } from 'react';
 import Logo from '../assets/logo-cream.png';
+import './NavBar-Footer.css';
+import Navbar from 'react-bootstrap/Navbar'
+
 
 class NavBar extends Component {
+
   state = {}
   render() {
-    return (<nav className="navbar navbar-dark bg-secondary">
-      <div className="container-fluid">
-        <div className="navbar-header">
-          <img height="50px" src={Logo} className="img-responsive" alt="logo"></img>
-          <a className="navbar-brand" href="#">La Marmotte</a>
-        </div>
+    return (<Navbar bg="secondary">
+      <Navbar.Brand href="#home">
+        <img
+          src={Logo}
+          width="60"
+          height="60"
+          className="d-inline-block align-top"
+          alt="React Bootstrap logo"
+        />
+        <a class="marmotte" href="../home/index.html">La Marmotte</a>
+      </Navbar.Brand>
 
-        <ul className="nav navbar-right m-2">
-          <li> Home   |  </li>
-          <li> Add Recipe  |  </li>
-          <li className="dropdown">
-            <a className="dropdown-toggle" data-toggle="dropdown" href="#">Categories
-                <span className="caret"></span></a>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
 
-            <ul className="dropdown-menu">
-              <li><a href="#">Page 1-1</a></li>
-              <li><a href="#">Page 1-2</a></li>
-              <li><a href="#">Page 1-3</a></li>
-            </ul>
+        <ul class="navbar-nav"  >
+          <li class="nav-item"  >
+            <a class="nav-link " style={{ color: "white", fontSize: 20 }} href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <form class="nav-link" style={{ color: "white", fontSize: 20 }} action="../recipe_page/recipe_page.html" method="GET">
+              <label for="recipes" class="label">Categories </label>
+              <select name="recipes" onchange="this.form.submit()">
+                <option disabled selected value>Select a Recipe</option>
+                <optgroup label="Starters" id="starters">
+                </optgroup>
+                <optgroup label="Main Dishes" id="main_dishes">
+                </optgroup>
+                <optgroup label="Desserts" id="desserts">
+                </optgroup>
+              </select>
+            </form>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style={{ color: "white", fontSize: 20 }} href="#">Add Recipe </a>
           </li>
         </ul>
 
       </div>
-    </nav>);
+
+    </Navbar>);
   }
 }
 
 export default NavBar;
+

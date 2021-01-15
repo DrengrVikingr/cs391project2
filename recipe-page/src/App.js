@@ -6,13 +6,13 @@ function App() {
   return (
     <div className="App">
       <header>
-       <NavBar/>
+        <NavBar />
       </header>
       <body>
-        <Recipe/>
+        <Recipe />
       </body>
 
-      <footer><Footer/></footer>
+      <footer><Footer /></footer>
     </div>
   );
 }
