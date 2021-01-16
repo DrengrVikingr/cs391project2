@@ -1,6 +1,6 @@
 import React, { Component} from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { InputGroup, FormControl, DropdownButton, Dropdown, Button } from 'react-bootstrap';
+import { InputGroup, FormControl, DropdownButton, Dropdown, Button, Container, Image } from 'react-bootstrap';
 
 
 class AddRecipe extends Component {
@@ -8,6 +8,7 @@ class AddRecipe extends Component {
     state = {  }
     render() { 
         return (
+            <Container style = {{marginTop: '2rem'}}>
             <body onload="getRecipes();">
             <h4>Step 1</h4>
             <DropdownButton variant="outline-dark" size="sm" id="dropdown-basic-button" title="Choose a category" >
@@ -57,6 +58,7 @@ class AddRecipe extends Component {
             </InputGroup>
             <Button variant="outline-dark">Done</Button>{' '}
             </body>
+            </Container>
         );
     }
 }

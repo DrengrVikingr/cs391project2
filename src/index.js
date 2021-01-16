@@ -11,13 +11,15 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Home from './home';
 import AddRecipePage from './addRecipePage';
 import RecipePage from './recipe_page';
+import Categories from './categories';
+
 
 ReactDOM.render(
   <Router>
     <Switch>
       <Route path="/" exact component={Home} />
       <Route path="/sign_up_login" component={SignUpLogin} />
-      <Route path="/add_recipe" component={AddRecipePage}/>
+      <Route path="/categories_page" component={Categories}/>
       <Route path="/recipe_page" component={RecipePage}/>
     </Switch>
 
