@@ -10,9 +10,10 @@ class Recipe extends Component {
   render() {
     return (<body onload="getRecipes(); getRecipe(); checkInserted();">
       <div class="pagetitle">
+      <p id="name" class="recipe_name" style={{color:'whitesmoke'}}>{this.props.name}</p>
 
-        <h1 id="name" class="recipe_name">{this.props.name}</h1>
-
+        <h1 id="title" class="recipe_title">{this.props.title}</h1>
+        
         <h3 id="author" class="author"><i>{this.props.author}</i></h3>
       </div>
 

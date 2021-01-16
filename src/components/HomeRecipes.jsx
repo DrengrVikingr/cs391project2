@@ -15,7 +15,7 @@ class HomeRecipes extends Component {
                     <ul className="list-unstyled" >
                         <HomeRecipe name="Babka" image={Babka} author={this.getAuthor("Babka")} recipe={this.getRecipe("Babka")} />
                         <HomeRecipe name="Brownie" image={Brownie} author={this.getAuthor("Brownie")} recipe={this.getRecipe("Brownie")} />
-                        <HomeRecipe name="Profiterole" image={Profiterol} author={this.getAuthor("Profiterol")} recipe={this.getRecipe("Profiterol")} />
+                        <HomeRecipe name="Profiterol" image={Profiterol} author={this.getAuthor("Profiterol")} recipe={this.getRecipe("Profiterol")} />
                     </ul>
                 </Container>
             </React.Fragment>

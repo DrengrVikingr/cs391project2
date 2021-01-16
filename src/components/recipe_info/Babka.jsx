@@ -9,7 +9,7 @@ class Babka extends Component {
         return (
             <React.Fragment>
                 <NavBar />
-                <Recipe name={this.getName("Babka")} author={this.getAuthor("Babka")} description={this.getDesc("Babka")} ingredients={this.getIngredients("Babka")} instructions={this.getInstructions("Babka")} />
+                <Recipe name={this.getName("Babka")} title={this.getTitle("Babka")}author={this.getAuthor("Babka")} description={this.getDesc("Babka")} ingredients={this.getIngredients("Babka")} instructions={this.getInstructions("Babka")} />
                 <Footer />
             </React.Fragment>
         );
@@ -18,6 +18,11 @@ class Babka extends Component {
     getName(name) {
         return "Babka";
     }
+
+    getTitle(name) {
+        return "How to Make Choclate Babka?";
+    }
+
 
     getAuthor(name) {
         return "Jeanine Donofrio";
