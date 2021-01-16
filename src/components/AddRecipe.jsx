@@ -2,12 +2,6 @@ import React, { Component} from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { InputGroup, FormControl, DropdownButton, Dropdown, Button } from 'react-bootstrap';
 
-const recipe_categories = [
-    { value: "", label: 'Choose a category' },
-    { value: "starters", label: 'Starters' },
-    { value: "main_dishes", label: 'Main Dishes'},
-    { value: "desserts", label: 'Desserts'}
-]
 
 class AddRecipe extends Component {
 
