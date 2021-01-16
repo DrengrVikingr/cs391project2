@@ -16,7 +16,7 @@ class NavBar extends Component {
           className="d-inline-block align-top"
           alt="React Bootstrap logo"
         />
-        <a class="marmotte" href="../home/index.html" style={{color:'white'}}>La Marmotte</a>
+        <a class="marmotte" href="./" style={{color:'white'}}>La Marmotte</a>
       </Navbar.Brand>
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="navbar-nav"  >
