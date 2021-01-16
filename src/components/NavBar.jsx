@@ -22,13 +22,13 @@ class NavBar extends Component {
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="navbar-nav"  >
           <li class="nav-item"  >
-            <Link to="/" style={{ color: "white", fontSize: 18, marginRight: '10px', textDecoration: 'none'}}>Home</Link>
+            <Link to="/" style={{ color: "white", fontSize: 18, marginRight: '20px', textDecoration: 'none'}}>Home</Link>
           </li>
           <li class="nav-item">
-            <Link to="/categories" style={{ color: "white", fontSize: 18, marginRight: '10px', textDecoration: 'none' }}>Categories</Link>
+            <Link to="/categories" style={{ color: "white", fontSize: 18, marginRight: '20px', textDecoration: 'none' }}>Categories</Link>
           </li>
           <li class="nav-item">
-            <Link to="/add_recipe" style={{ color: "white", fontSize: 18, marginRight: '10px', textDecoration: 'none' }}>Add Recipe</Link>
+            <Link to="/add_recipe" style={{ color: "white", fontSize: 18, marginRight: '20px', textDecoration: 'none' }}>Add Recipe</Link>
           </li>
         </ul>
 
