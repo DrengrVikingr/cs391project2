@@ -16,12 +16,12 @@ class NavBar extends Component {
           className="d-inline-block align-top"
           alt="React Bootstrap logo"
         />
-        <a class="marmotte" href="./" style={{color:'white'}}>La Marmotte</a>
+        <a class="marmotte" href="/" style={{color:'white'}}>La Marmotte</a>
       </Navbar.Brand>
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="navbar-nav"  >
           <li class="nav-item"  >
-            <a class="nav-link " style={{ color: "white", fontSize: 18}} href="./">Home</a>
+            <a class="nav-link " style={{ color: "white", fontSize: 18}} href="/">Home</a>
           </li>
           <li class="nav-item">
             <form class="nav-link"  action="../recipe_page/recipe_page.html" method="GET">
@@ -38,7 +38,7 @@ class NavBar extends Component {
             </form>
           </li>
           <li class="nav-item">
-            <a class="nav-link" style={{ color: "white", fontSize: 18 }} href="./add_recipe">Add Recipe </a>
+            <a class="nav-link" style={{ color: "white", fontSize: 18 }} href="/add_recipe">Add Recipe </a>
           </li>
         </ul>
 

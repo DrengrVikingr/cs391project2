@@ -9,7 +9,7 @@ class Profiterole extends Component {
         return (
             <React.Fragment>
                 <NavBar />
-                <Recipe name={this.getName("Profiterole")} author={this.getAuthor("Profiterole")} description={this.getDesc("Profiterole")} ingredients={this.getIngredients("Profiterole")} instructions={this.getInstructions("Profiterole")} />
+                <Recipe name={this.getName("Profiterole")} title={this.getTitle("Profiterole")} author={this.getAuthor("Profiterole")} description={this.getDesc("Profiterole")} ingredients={this.getIngredients("Profiterole")} instructions={this.getInstructions("Profiterole")} />
                 <Footer />
             </React.Fragment>
         );
@@ -17,6 +17,9 @@ class Profiterole extends Component {
 
     getName(name) {
         return "Profiterole";
+    }
+    getTitle(name) {
+        return "Profiteroles!!!";
     }
 
     getAuthor(name) {
