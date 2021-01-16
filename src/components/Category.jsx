@@ -6,20 +6,23 @@ import { Container, Col, Row } from 'react-bootstrap';
 class Category extends Component {
     render() {
         return (
-            <Container>
+            <Container >
                 <Row>
                     <Col xs={12}>
                     <Carousel>
                         <Carousel.Item>
                         <Link to={this.props.path1}>
-                            <img
+                            <img 
                                 className = "d-block w-100"
                                 src = {this.props.img1}
                                 alt = {this.props.title1}
+                        
                             />
                             <Carousel.Caption>
-                                <h3>{this.props.author1}</h3>
-                                <p>{this.props.desc1}</p>
+                                <div style={{paddingTop:'0.5rem',paddingBottom:'0.5rem',paddingRight:'0.5rem',paddingLeft:'0.5rem', backgroundColor:'rgba(110, 117, 124, 0.40)'}}>
+                                <h3 >{this.props.author1}</h3>
+                                <p  >{this.props.desc1}</p>
+                                </div>
                             </Carousel.Caption>
                         </Link>
                         </Carousel.Item>
@@ -30,9 +33,11 @@ class Category extends Component {
                                 src = {this.props.img2}
                                 alt = {this.props.title2}
                             />
-                            <Carousel.Caption>
+                            <Carousel.Caption >
+                                <div style={{paddingTop:'0.5rem',paddingBottom:'0.5rem',paddingRight:'0.5rem',paddingLeft:'0.5rem', backgroundColor:'rgba(110, 117, 124, 0.40)'}}>
                                 <h3>{this.props.author2}</h3>
-                                <p>{this.props.desc2}</p>
+                                <p >{this.props.desc2}</p>
+                                </div>
                             </Carousel.Caption>
                             </Link>
                         </Carousel.Item>
@@ -44,8 +49,10 @@ class Category extends Component {
                                 alt = {this.props.title3}
                             />
                             <Carousel.Caption>
+                                <div style={{paddingTop:'0.5rem',paddingBottom:'0.5rem',paddingRight:'0.5rem',paddingLeft:'0.5rem', backgroundColor:'rgba(110, 117, 124, 0.40)'}}>
                                 <h3>{this.props.author3}</h3>
-                                <p>{this.props.desc3}</p>
+                                <p >{this.props.desc3}</p>
+                                </div>
                             </Carousel.Caption>
                             </Link>
                         </Carousel.Item>

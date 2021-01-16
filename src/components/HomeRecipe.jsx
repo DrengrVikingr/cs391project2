@@ -20,8 +20,8 @@ class HomeRecipe extends Component {
                         alt="image"
                     />
                     <Media.Body>
-                        <h5 className="text-warning"> <Link to={'/recipe_page/' + this.props.name}  >  {this.props.name} </Link> </h5>
-                        <p>
+                        <h5 className="text-warning" > <Link to={'/recipe_page/' + this.props.name}  >  {this.props.name} </Link> </h5>
+                        <p >
                             {this.props.recipe}
                         </p>
                         <p className="text-warning"> - {this.props.author} </p>
