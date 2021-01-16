@@ -16,7 +16,7 @@ class Brownie extends Component {
     }
 
     getName(name) {
-        return "Babka";
+        return "Brownie";
     }
 
     getAuthor(name) {
