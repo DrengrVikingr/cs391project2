@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import Footer from './components/Footer';
 import Recipe from './components/Recipe';
 import NavBar from './components/NavBar';
-import './App.css';
 import Babka from './components/recipe_info/Babka';
 import Profiterole from './components/recipe_info/Profiterole';
 import Brownie from './components/recipe_info/Brownie';
