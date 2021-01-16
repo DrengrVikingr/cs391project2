@@ -4,7 +4,7 @@ import Babka from '../assets/babka.jpg';
 import Brownie from '../assets/brownie.jpg';
 import Profiterol from '../assets/profiterol.jpg';
 import { Container, Row } from 'react-bootstrap';
-
+import Link from 'react-router-dom';
 
 class HomeRecipes extends Component {
     state = {}
@@ -13,9 +13,9 @@ class HomeRecipes extends Component {
             <React.Fragment>
                 <Container fluid>
                     <ul className="list-unstyled" >
-                        <HomeRecipe image={Babka} author={this.getAuthor("Babka")} recipe={this.getRecipe("Babka")} />
-                        <HomeRecipe image={Brownie} author={this.getAuthor("Brownie")} recipe={this.getRecipe("Brownie")} />
-                        <HomeRecipe image={Profiterol} author={this.getAuthor("Profiterol")} recipe={this.getRecipe("Profiterol")} />
+                        <HomeRecipe name="Babka" image={Babka} author={this.getAuthor("Babka")} recipe={this.getRecipe("Babka")} />
+                        <HomeRecipe name="Brownie" image={Brownie} author={this.getAuthor("Brownie")} recipe={this.getRecipe("Brownie")} />
+                        <HomeRecipe name="Profiterol" image={Profiterol} author={this.getAuthor("Profiterol")} recipe={this.getRecipe("Profiterol")} />
                     </ul>
                 </Container>
             </React.Fragment>
