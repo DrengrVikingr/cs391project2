@@ -30,6 +30,7 @@ h3.author {
   white-space: pre-line;
  font-size: 90%;
 line-height: 150%;
+background: #ffffff;
 }
 
 
@@ -41,10 +42,10 @@ img.recipe {
   width: 45%;
   margin-left: 25%;
   margin-bottom: 40px;
-  padding: 0% 2% 2% 2%;
+  padding: 2% 2% 2% 2%;
   text-align: left;
   font-family: 'Roboto';
-  color: rgb(83, 88, 94);
+  color : rgb(83, 88, 94);
   background: #ffffff;
   font-size: 90%;
   white-space: pre-line;
@@ -61,7 +62,7 @@ img.ingredient_icon {
   width: 45%;
   margin-left: 25%;
   margin-bottom: 100px;
-  padding: 0% 2% 2% 2%;
+  padding: 2% 2% 2% 2%;
   text-align: left;
   font-family: 'Roboto';
   color: rgb(83, 88, 94);
