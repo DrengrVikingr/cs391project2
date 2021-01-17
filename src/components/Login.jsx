@@ -26,6 +26,7 @@ class Login extends Component {
 
     handleSubmit(event) {
         let user = JSON.parse(localStorage.getItem(this.state.email));
+        console.log(user);
         if (localStorage) {
             console.log(user.email);
 
@@ -43,7 +44,7 @@ class Login extends Component {
                 alert("User does not exist");
             }
         }
-
+        setTimeout(function () { document.location.href = "/"; }, 250);
         event.preventDefault();
     }
 

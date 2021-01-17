@@ -11,11 +11,25 @@ class NavBar extends Component {
     this.state = {
       isLogged: sessionStorage.getItem("isLoggedIn") ? "Sign Out" : "Sign In"
     }
+
+    this.onClick = this.onClick.bind(this);
   }
 
-  logOut() {
-    if (this.state.isLogged === "Sign Out") {
+  onClick(e) {
+    if (sessionStorage.getItem("isLoggedIn")) {
       sessionStorage.setItem("isLoggedIn", false);
+      this.props.isLogged("Sign In");
+    }
+  }
+
+  componentDidMount() {
+    this.onClick();
+  }
+
+  componentDidUpdate(prevProps) {
+    if (!(this.props.isLogged, prevProps.isLogged)) // Check if it's a new user, you can also use some unique property, like the ID  (this.props.user.id !== prevProps.user.id)
+    {
+      this.updateUser();
     }
   }
 
@@ -39,7 +53,7 @@ class NavBar extends Component {
           <Nav>
             <Nav.Link href="/" style={{ color: "white", fontSize: 18, marginRight: '20px', textDecoration: 'none' }}>Home</Nav.Link>
             <Nav.Link href="/categories" style={{ color: "white", fontSize: 18, marginRight: '20px', textDecoration: 'none' }}>Categories</Nav.Link>
-            <Nav.Link onClick={this.logOut()} href="/sign_up_login" style={{ color: "white", fontSize: 18, marginRight: '20px', textDecoration: 'none' }}>{this.state.isLogged}</Nav.Link>
+            <Nav.Link onClick={this.onClick} href="/sign_up_login" style={{ color: "white", fontSize: 18, marginRight: '20px', textDecoration: 'none' }}>{this.state.isLogged}</Nav.Link>
           </Nav>
         </div>
       </Navbar>);
