@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
+import { Container, Row, Col } from 'react-bootstrap';
 import Footer from './components/Footer';
-import { Login } from './components/forms';
+import Login from './components/Login';
 import NavBar from './components/NavBar';
-import { login, signUp } from './components/sign_up_login';
+import SignUp from './components/SignUp';
+
 
 class SignUpLogin extends Component {
     state = {}
@@ -10,8 +12,12 @@ class SignUpLogin extends Component {
         return (
             <React.Fragment>
                 <NavBar />
-                <signUp />
-                <Login />
+                <Container>
+                    <Row>
+                        <Col> <Login /> </Col>
+                        <Col>  <SignUp /> </Col>
+                    </Row>
+                </Container>
                 <Footer />
             </React.Fragment>
         );
