@@ -11,7 +11,7 @@ User's can also signup and login to our website.
 
 Group members and their responisibilites(what did each of us did in this project?):
 Hasan Bilgin -> 
-Eray Özdayıoğlu -> 
+Eray Özdayıoğlu -> Sign Up/ Login Page , Authentication, Home Page 
 Yasemin Orhun -> 
 Zeliha Aydın -> Categories page design and implementation, creating responsive pages, helping the improvment of other pages
 
