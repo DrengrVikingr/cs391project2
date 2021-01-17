@@ -49,23 +49,23 @@ class CategoriesPage extends Component {
     }
 
     getAuthor(recipe) {
-        if (recipe === "Babka") return "Cenk Sönmezsoy";
-        else if (recipe === "Profiterol") return "Jean Dunn";
-        else if (recipe === "Brownie") return "Jeanine Donofrio";
-        else if (recipe === "MongolianBeef") return "Sabrina Snyder";
-        else if (recipe === "Lasagna") return "Reachel Farnsworth";
-        else if (recipe === "Falafel") return "Lisa Bryan";
-        else if (recipe === "CeasarSalad") return "Natasha Kravchuk";
-        else if (recipe === "TuscanChicken") return "Jessica Gavin";
+        if      (recipe === "Babka") return          "Cenk Sönmezsoy";
+        else if (recipe === "Profiterol") return     "Jean Dunn";
+        else if (recipe === "Brownie") return        "Jeanine Donofrio";
+        else if (recipe === "MongolianBeef") return  "Sabrina Snyder";
+        else if (recipe === "Lasagna") return        "Reachel Farnsworth";
+        else if (recipe === "Falafel") return        "Lisa Bryan";
+        else if (recipe === "CeasarSalad") return    "Natasha Kravchuk";
+        else if (recipe === "TuscanChicken") return  "Jessica Gavin";
         else if (recipe === "PotatoLeekSoup") return "Jenn Segal";
         else return "";
     }
 
     getDesc(recipe) {
-        if (recipe === "Babka") return               "Baking a chocolate babka is no casual undertaking. The Eastern European yeast-risen coffee cake has 14 steps and takes all day to make. But the results are worth every sugarcoated second...";
+        if      (recipe === "Babka") return          "Baking a chocolate babka is no casual undertaking. The Eastern European yeast-risen coffee cake has 14 steps and takes all day to make. But the results are worth every sugarcoated second...";
         else if (recipe === "Profiterol") return     "Choux pastry dough is piped through a pastry bag or dropped with a pair of spoons into small balls and baked to form largely hollow puffs .After cooling, the baked profiteroles are injected...";
         else if (recipe === "Brownie") return        "According to legend, the brownie was invented by one Brownie Schrumph when she tried to make a chocolate cake without baking powder or baking soda. Instead of rising, the brownie collapses...";
-        else if (recipe === "MongolianBeef") return      "Mongolian Beef is a recipe that I’ve been cooking for clients for many years for a number of reasons. One, people love anything that tastes like Chinese takeout.";
+        else if (recipe === "MongolianBeef") return  "Mongolian Beef is a recipe that I’ve been cooking for clients for many years for a number of reasons. One, people love anything that tastes like Chinese takeout.";
         else if (recipe === "Lasagna") return        "There are three kinds of cheese in this recipe. First you have the classic lasagna filling of ricotta cheese. Use whole milk ricotta cheese in this recipe for best results...";
         else if (recipe === "Falafel") return        "Falafel are delicious balls of chickpea and herb goodness that you find in Middle Eastern cooking. Naturally vegan and vegetarian, falafel are great in wraps, pitas, sandwiches and salads...";
         else if (recipe === "CeasarSalad") return    "My son, David, is to thank for this recipe. He is 9 years old and took kids cooking classes at Sur La Table where he learned and fell in love with this caesar salad recipe, so we re-created...";
