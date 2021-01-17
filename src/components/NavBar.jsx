@@ -24,7 +24,7 @@ class NavBar extends Component {
         <Nav>
             <Nav.Link href="/" style={{ color: "white", fontSize: 18, marginRight: '20px', textDecoration: 'none'}}>Home</Nav.Link>
             <Nav.Link href="/categories" style={{ color: "white", fontSize: 18, marginRight: '20px', textDecoration: 'none' }}>Categories</Nav.Link>
-            <Nav.Link href="/add_recipe" style={{ color: "white", fontSize: 18, marginRight: '20px', textDecoration: 'none' }}>Add Recipe</Nav.Link>
+            <Nav.Link href="/sign_up_login" style={{ color: "white", fontSize: 18, marginRight: '20px', textDecoration: 'none' }}>Sign Up/Login</Nav.Link>
         </Nav>
       </div>
     </Navbar>);

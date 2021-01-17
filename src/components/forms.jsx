@@ -12,7 +12,6 @@ export const Login = () => {
                 <input type="password" name="password_login" placeholder="Password" required></input>
                 <br></br>
                 <button type="submit" className="btn btn-outline-secondary">Login</button>
-                <Button variant="outline-secondary">Secondary</Button>{' '}
                 <br></br>
                 <p id="login_error"></p>
 			</form>

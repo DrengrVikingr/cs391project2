@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import Footer from './components/Footer';
-import { Login } from './components/forms';
 import NavBar from './components/NavBar';
-import { login, signUp } from './components/sign_up_login';
+import { Login, SignUp } from './components/forms';
 
 class SignUpLogin extends Component {
     state = {}
@@ -10,7 +9,7 @@ class SignUpLogin extends Component {
         return (
             <React.Fragment>
                 <NavBar />
-                <signUp />
+                <SignUp />
                 <Login />
                 <Footer />
             </React.Fragment>
