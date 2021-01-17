@@ -19,9 +19,9 @@ class Category extends Component {
                         
                             />
                             <Carousel.Caption>
-                                <div style={{paddingTop:'0.5rem',paddingBottom:'0.5rem',paddingRight:'0.5rem',paddingLeft:'0.5rem', backgroundColor:'rgba(110, 117, 124, 0.40)'}}>
-                                <h3 >{this.props.author1}</h3>
-                                <p  >{this.props.desc1}</p>
+                                <div style={{paddingTop:'0.5rem',paddingBottom:'0.5rem',paddingRight:'0.5rem',paddingLeft:'0.5rem', backgroundColor:'rgba(110, 117, 124, 0.40)', maxWidth: '900px', maxHeight: '600px'}}>
+                                <h3 style={{fontSize: 20}}>{this.props.author1}</h3>
+                                <p style={{fontSize: 11}} >{this.props.desc1}</p>
                                 </div>
                             </Carousel.Caption>
                         </Link>
@@ -34,9 +34,9 @@ class Category extends Component {
                                 alt = {this.props.title2}
                             />
                             <Carousel.Caption >
-                                <div style={{paddingTop:'0.5rem',paddingBottom:'0.5rem',paddingRight:'0.5rem',paddingLeft:'0.5rem', backgroundColor:'rgba(110, 117, 124, 0.40)'}}>
-                                <h3>{this.props.author2}</h3>
-                                <p >{this.props.desc2}</p>
+                                <div style={{paddingTop:'0.5rem',paddingBottom:'0.5rem',paddingRight:'0.5rem',paddingLeft:'0.5rem', backgroundColor:'rgba(110, 117, 124, 0.40)', maxWidth: '900px', maxHeight: '600px'}}>
+                                <h3 style={{fontSize: 20}}>{this.props.author2}</h3>
+                                <p style={{fontSize: 11}}>{this.props.desc2}</p>
                                 </div>
                             </Carousel.Caption>
                             </Link>
@@ -49,17 +49,16 @@ class Category extends Component {
                                 alt = {this.props.title3}
                             />
                             <Carousel.Caption>
-                                <div style={{paddingTop:'0.5rem',paddingBottom:'0.5rem',paddingRight:'0.5rem',paddingLeft:'0.5rem', backgroundColor:'rgba(110, 117, 124, 0.40)'}}>
-                                <h3>{this.props.author3}</h3>
-                                <p >{this.props.desc3}</p>
+                                <div style={{paddingTop:'0.5rem',paddingBottom:'0.5rem',paddingRight:'0.5rem',paddingLeft:'0.5rem', backgroundColor:'rgba(110, 117, 124, 0.40)', maxWidth: '900px', maxHeight: '600px'}}>
+                                <h3 style={{fontSize: 20}}>{this.props.author3}</h3>
+                                <p style={{fontSize: 11}}>{this.props.desc3}</p>
                                 </div>
                             </Carousel.Caption>
                             </Link>
                         </Carousel.Item>
                     </Carousel>
-                    </Col>
-                </Row>
-                
+                        </Col>
+                    </Row>
             </Container>
         );
   }
