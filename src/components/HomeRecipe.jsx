@@ -19,9 +19,9 @@ class HomeRecipe extends Component {
                         src={this.props.image}
                         alt="image"
                     />
-                    <Media.Body>
-                        <h5 className="text-warning"> <Link to={'/recipe_page/' + this.props.name}  >  {this.props.name} </Link> </h5>
-                        <p>
+                    <Media.Body >
+                        <h5 className="text-warning" > <Link style={{textDecoration:'none',  color:'rgb(110, 117, 124)', fontSize:'90',fontWeight:'bold'}} to={'/recipe_page/' + this.props.name}  >  {this.props.name} </Link> </h5>
+                        <p >
                             {this.props.recipe}
                         </p>
                         <p className="text-warning"> - {this.props.author} </p>
@@ -33,7 +33,10 @@ class HomeRecipe extends Component {
     }
 
 
+   
 
+      
+      
 
 
 }

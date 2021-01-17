@@ -7,6 +7,7 @@ import Babka from './assets/babka.jpg';
 import Brownie from './assets/brownie.jpg';
 import Profiterol from './assets/profiterol.jpg';
 import { Link } from 'react-router-dom'
+import './index.css'
 
 class CategoriesPage extends Component {
     state = {}
@@ -14,7 +15,7 @@ class CategoriesPage extends Component {
         return (
             <React.Fragment>
                 <NavBar />
-                <h1 style={{textAlign: "center", marginUp: '100px', marginBottom: '50px' }}>Desserts</h1>
+                <h1 style={{textAlign: "center", marginTop: '2rem', marginBottom: '1rem', color: 'rgb(83, 88, 94)'}}>Desserts</h1>
                 <Category
                 path1="/recipe_page/Babka" img1={Babka} title1="Babka" author1={this.getAuthor("Babka")} desc1={this.getDesc("Babka")}
                 path2="/recipe_page/Brownie" img2={Brownie} title2="Brownie" author2={this.getAuthor("Brownie")} desc2={this.getDesc("Brownie")}

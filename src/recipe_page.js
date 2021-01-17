@@ -9,6 +9,8 @@ import CeasarSalad from './components/recipe_info/CeasarSalad';
 import Falafel from './components/recipe_info/Falafel';
 import Lasagna from './components/recipe_info/Lasagna';
 import MongolianBeef from './components/recipe_info/MongolianBeef';
+import TuscanChicken from './components/recipe_info/TuscanChicken';
+import PotatoLeekSoup from './components/recipe_info/PotatoLeekSoup';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 
@@ -25,6 +27,8 @@ class RecipePage extends Component {
                     <Route path="/recipe_page/Falafel" component={Falafel} />
                     <Route path="/recipe_page/Lasagna" component={Lasagna} />
                     <Route path="/recipe_page/MongolianBeef" component={MongolianBeef} />
+                    <Route path="/recipe_page/TuscanChicken" component={TuscanChicken} />
+                    <Route path="/recipe_page/PotatoLeekSoup" component={PotatoLeekSoup} />
                 </Switch>
 
 
