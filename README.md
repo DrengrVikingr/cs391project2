@@ -12,7 +12,7 @@ User's can also signup and login to our website.
 Group members and their responisibilites(what did each of us did in this project?):
 Hasan Bilgin -> 
 Eray Özdayıoğlu -> Sign Up/ Login Page , Authentication, Home Page 
-Yasemin Orhun -> 
+Yasemin Orhun -> Footer and Navbar , Recipe Pages and related content , overall project visual adjustments
 Zeliha Aydın -> Categories page design and implementation, creating responsive pages, helping the improvment of other pages
 
 Instructions for running the project:
