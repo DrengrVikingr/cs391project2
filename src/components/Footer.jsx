@@ -7,7 +7,7 @@ const Footer = () => (
     <p >About us:</p>
     <p style={{color: 'white', fontSize:'85%'}}>La Marmotte is a website where users can view recipes. 
       Recipes are categorized and displayed on a different page. 
-      Users can also add their own recipes but they are required to sign up and/or login to our website to do so.</p>
+      Users can sign up and/or login to our website.</p>
   </footer>
 );
 
