@@ -16,11 +16,10 @@ class Category extends Component {
                                 className = "d-block w-100"
                                 src = {this.props.img1}
                                 alt = {this.props.title1}
-                        
                             />
                             <Carousel.Caption>
                                 <div style={{paddingTop:'0.5rem',paddingBottom:'0.5rem',paddingRight:'0.5rem',paddingLeft:'0.5rem', backgroundColor:'rgba(110, 117, 124, 0.40)', maxWidth: '900px', maxHeight: '600px'}}>
-                                <h3 style={{fontSize: 20}}>{this.props.author1}</h3>
+                                <h3 style={{fontSize: 20}}>{this.props.title1}</h3>
                                 <p style={{fontSize: 11}} >{this.props.desc1}</p>
                                 </div>
                             </Carousel.Caption>
@@ -35,7 +34,7 @@ class Category extends Component {
                             />
                             <Carousel.Caption >
                                 <div style={{paddingTop:'0.5rem',paddingBottom:'0.5rem',paddingRight:'0.5rem',paddingLeft:'0.5rem', backgroundColor:'rgba(110, 117, 124, 0.40)', maxWidth: '900px', maxHeight: '600px'}}>
-                                <h3 style={{fontSize: 20}}>{this.props.author2}</h3>
+                                <h3 style={{fontSize: 20}}>{this.props.title2}</h3>
                                 <p style={{fontSize: 11}}>{this.props.desc2}</p>
                                 </div>
                             </Carousel.Caption>
@@ -50,7 +49,7 @@ class Category extends Component {
                             />
                             <Carousel.Caption>
                                 <div style={{paddingTop:'0.5rem',paddingBottom:'0.5rem',paddingRight:'0.5rem',paddingLeft:'0.5rem', backgroundColor:'rgba(110, 117, 124, 0.40)', maxWidth: '900px', maxHeight: '600px'}}>
-                                <h3 style={{fontSize: 20}}>{this.props.author3}</h3>
+                                <h3 style={{fontSize: 20}}>{this.props.title3}</h3>
                                 <p style={{fontSize: 11}}>{this.props.desc3}</p>
                                 </div>
                             </Carousel.Caption>
