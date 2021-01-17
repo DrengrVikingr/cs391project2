@@ -5,7 +5,22 @@ import { Navbar, Nav } from 'react-bootstrap'
 
 class NavBar extends Component {
 
-  state = {}
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      isLogged: sessionStorage.getItem("isLoggedIn") ? "Sign Out" : "Sign In"
+    }
+  }
+
+  logOut() {
+    if (this.state.isLogged === "Sign Out") {
+      sessionStorage.setItem("isLoggedIn", false);
+    }
+  }
+
+
+
   render() {
     return (
       <Navbar bg="secondary" >
@@ -24,7 +39,7 @@ class NavBar extends Component {
           <Nav>
             <Nav.Link href="/" style={{ color: "white", fontSize: 18, marginRight: '20px', textDecoration: 'none' }}>Home</Nav.Link>
             <Nav.Link href="/categories" style={{ color: "white", fontSize: 18, marginRight: '20px', textDecoration: 'none' }}>Categories</Nav.Link>
-            <Nav.Link href="/sign_up_login" style={{ color: "white", fontSize: 18, marginRight: '20px', textDecoration: 'none' }}>Sign Up /Login</Nav.Link>
+            <Nav.Link onClick={this.logOut()} href="/sign_up_login" style={{ color: "white", fontSize: 18, marginRight: '20px', textDecoration: 'none' }}>{this.state.isLogged}</Nav.Link>
           </Nav>
         </div>
       </Navbar>);
