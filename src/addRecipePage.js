@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import Footer from './components/Footer';
 import AddRecipe from './components/AddRecipe';
 import NavBar from './components/NavBar';
-import './App.css';
 
 class  AddRecipePage extends Component {
     state = {}

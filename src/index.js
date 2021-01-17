@@ -1,8 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import NavBar from './components/NavBar';
 import HomeRecipes from './components/HomeRecipes';
@@ -11,6 +9,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Home from './home';
 import AddRecipePage from './addRecipePage';
 import RecipePage from './recipe_page';
+import CategoriesPage from './categories_page';
 
 ReactDOM.render(
   <Router>
@@ -19,6 +18,7 @@ ReactDOM.render(
       <Route path="/sign_up_login" component={SignUpLogin} />
       <Route path="/add_recipe" component={AddRecipePage}/>
       <Route path="/recipe_page" component={RecipePage}/>
+      <Route path="/categories" component={CategoriesPage}/>
     </Switch>
 
 
@@ -26,8 +26,3 @@ ReactDOM.render(
   ,
   document.getElementById('root')
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
