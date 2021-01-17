@@ -1,63 +1,61 @@
 import React, { Component } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { InputGroup, FormControl, DropdownButton, Dropdown, Button } from 'react-bootstrap';
-
+import { InputGroup, FormControl, DropdownButton, Dropdown, Button, Form } from 'react-bootstrap';
+import ToggleButtonGroup from 'react-bootstrap/ToggleButtonGroup'
 
 class AddRecipe extends Component {
 
   state = {}
   render() {
     return (
-      <body onload="getRecipes();">
-        <h4>Step 1</h4>
-        <DropdownButton variant="outline-dark" size="sm" id="dropdown-basic-button" title="Choose a category" >
-          <Dropdown.Item href="#/action-1">Starters</Dropdown.Item>
-          <Dropdown.Item href="#/action-2">Main Dishes</Dropdown.Item>
-          <Dropdown.Item href="#/action-3">Desserts</Dropdown.Item>
-        </DropdownButton>
-        <br />
-        <h4>Step 2</h4>
-        <InputGroup>
-          <InputGroup.Prepend>
-            <InputGroup.Text></InputGroup.Text>
-          </InputGroup.Prepend>
-          <FormControl size="sm" placeholder="Give a name to your recipe" as="textarea" aria-label="With textarea" />
-        </InputGroup>
-        <br />
-        <h4>Step 3</h4>
-        <InputGroup>
-          <InputGroup.Prepend>
-            <InputGroup.Text></InputGroup.Text>
-          </InputGroup.Prepend>
-          <FormControl size="sm" placeholder="Add an author to your recipe" as="textarea" aria-label="With textarea" />
-        </InputGroup>
-        <br />
-        <h4>Step 4</h4>
-        <InputGroup>
-          <InputGroup.Prepend>
-            <InputGroup.Text></InputGroup.Text>
-          </InputGroup.Prepend>
-          <FormControl size="sm" placeholder="Add your ingredients" as="textarea" aria-label="With textarea" />
-        </InputGroup>
-        <br />
-        <h4>Step 5</h4>
-        <InputGroup>
-          <InputGroup.Prepend>
-            <InputGroup.Text></InputGroup.Text>
-          </InputGroup.Prepend>
-          <FormControl size="sm" placeholder="Add a description to your recipe" as="textarea" aria-label="With textarea" />
-        </InputGroup>
-        <br />
-        <h4>Step 6</h4>
-        <InputGroup>
-          <InputGroup.Prepend>
-            <InputGroup.Text></InputGroup.Text>
-          </InputGroup.Prepend>
-          <FormControl size="sm" placeholder="Describe your recipe with more details" as="textarea" aria-label="With textarea" />
-        </InputGroup>
-        <Button variant="outline-dark">Done</Button>{' '}
-      </body>
+      <Form className="mb-3">
+        <Form.Group controlId="category">
+          <Form.Label>Select the category</Form.Label>
+          <Form.Control as="select">
+            <option>Main Dishes</option>
+            <option>Starters</option>
+            <option>Desserts</option>
+          </Form.Control>
+        </Form.Group>
+        <Form.Group controlId="name">
+          <Form.Label>Give a name to your recipe</Form.Label>
+          <Form.Control as="textarea" rows={1} />
+        </Form.Group>
+        <Form.Group controlId="author">
+          <Form.Label>Add an author to your recipe</Form.Label>
+          <Form.Control as="textarea" rows={1} />
+        </Form.Group>
+        <Form.Group controlId="ingredients">
+          <Form.Label>Add a Ingredients to your recipe</Form.Label>
+          <Form.Control as="textarea" rows={3} />
+        </Form.Group>
+        <Form.Group controlId="description">
+          <Form.Label>Add a description to your recipe</Form.Label>
+          <Form.Control as="textarea" rows={3} />
+        </Form.Group>
+        <Form.Group controlId="instructions">
+          <Form.Label>Add the instructions of your recipe</Form.Label>
+          <Form.Control as="textarea" rows={3} />
+        </Form.Group>
+        <Button onClick={this.addRecipe()} as="input" type="submit" value="Submit" />
+
+      </Form>
     );
+  }
+  addRecipe() {
+    if (localStorage) {
+
+      var myrecipe = {
+        "category": document.getElementById("category").value, "author": document.getElementById("author").value,
+        "name": document.getElementById("name").value, "description": document.getElementById("description").value,
+        "ingredients": document.getElementById("ingredients").value, "instructions": document.getElementById("instructions").value
+      }
+      localStorage.setItem(document.getElementById("recipe_name").value, JSON.stringify(myrecipe));
+      console.log(localStorage);
+    }
+    else {
+      alert("Sorry, your browser does not support local storage");
+    }
   }
 }
 
@@ -69,12 +67,12 @@ function addRecipe() {
   if (localStorage) {
 
     var myrecipe = {
-      "category": document.getElementById("recipe_category").value, "author": document.getElementById("recipe_author").value,
-      "name": document.getElementById("recipe_name").value, "title": document.getElementById("recipe_name").value, "description": document.getElementById("recipe_desc").value,
-      "ingredients": document.getElementById("ingredients").value, "instructions": document.getElementById("instructions").value, "index": "recipe" + index
+      "category": document.getElementById("category").value, "author": document.getElementById("author").value,
+      "name": document.getElementById("name").value, "description": document.getElementById("description").value,
+      "ingredients": document.getElementById("ingredients").value, "instructions": document.getElementById("instructions").value
     }
-    localStorage.setItem("recipe" + index, JSON.stringify(myrecipe));
-    localStorage.setItem("recipeIndex", ++index);
+    localStorage.setItem(document.getElementById("recipe_name").value, JSON.stringify(myrecipe));
+    console.log(localStorage);
   }
   else {
     alert("Sorry, your browser does not support local storage");
