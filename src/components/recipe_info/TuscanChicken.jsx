@@ -11,7 +11,7 @@ class TuscanChicken extends Component {
         return (
             <React.Fragment>
                 <NavBar />
-                <Recipe name={this.getName("Tuscan Chicken")} title={this.getTitle("Tuscan Chicken")} author={this.getAuthor("Tuscan Chicken")} description={this.getDesc("Tuscan Chicken")} ingredients={this.getIngredients("Tuscan Chicken")} instructions={this.getInstructions("Tuscan Chicken")} />
+                <Recipe title={this.getTitle("Tuscan Chicken")} author={this.getAuthor("Tuscan Chicken")} description={this.getDesc("Tuscan Chicken")} ingredients={this.getIngredients("Tuscan Chicken")} instructions={this.getInstructions("Tuscan Chicken")} />
                 <Footer />
             </React.Fragment>
         );

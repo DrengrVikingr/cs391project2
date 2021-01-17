@@ -11,7 +11,7 @@ class Lasagna extends Component {
         return (
             <React.Fragment>
                 <NavBar />
-                <Recipe name={this.getName("Lasagna")} title={this.getTitle("Lasagna")} author={this.getAuthor("Lasagna")} description={this.getDesc("Lasagna")} ingredients={this.getIngredients("Lasagna")} instructions={this.getInstructions("Lasagna")} />
+                <Recipe  title={this.getTitle("Lasagna")} author={this.getAuthor("Lasagna")} description={this.getDesc("Lasagna")} ingredients={this.getIngredients("Lasagna")} instructions={this.getInstructions("Lasagna")} />
                 <Footer />
             </React.Fragment>
         );

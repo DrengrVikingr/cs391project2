@@ -11,7 +11,7 @@ class Profiterole extends Component {
         return (
             <React.Fragment>
                 <NavBar />
-                <Recipe name={this.getName("Profiterole")} title={this.getTitle("Profiterole")} author={this.getAuthor("Profiterole")} description={this.getDesc("Profiterole")} ingredients={this.getIngredients("Profiterole")} instructions={this.getInstructions("Profiterole")} />
+                <Recipe title={this.getTitle("Profiterole")} author={this.getAuthor("Profiterole")} description={this.getDesc("Profiterole")} ingredients={this.getIngredients("Profiterole")} instructions={this.getInstructions("Profiterole")} />
                 <Footer />
             </React.Fragment>
         );

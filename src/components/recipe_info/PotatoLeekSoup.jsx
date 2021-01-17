@@ -11,7 +11,7 @@ class PotatoLeekSoup extends Component {
         return (
             <React.Fragment>
                 <NavBar />
-                <Recipe name={this.getName("Potato Leek Soup")} title={this.getTitle("Potato Leek Soup")} author={this.getAuthor("Potato Leek Soup")} description={this.getDesc("Potato Leek Soup")} ingredients={this.getIngredients("Potato Leek Soup")} instructions={this.getInstructions("Potato Leek Soup")} />
+                <Recipe  title={this.getTitle("Potato Leek Soup")} author={this.getAuthor("Potato Leek Soup")} description={this.getDesc("Potato Leek Soup")} ingredients={this.getIngredients("Potato Leek Soup")} instructions={this.getInstructions("Potato Leek Soup")} />
                 <Footer />
             </React.Fragment>
         );

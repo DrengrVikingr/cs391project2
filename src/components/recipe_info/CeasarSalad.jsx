@@ -11,7 +11,7 @@ class CeasarSalad extends Component {
         return (
             <React.Fragment>
                 <NavBar />
-                <Recipe name={this.getName("Ceasar Salad")} title={this.getTitle("Ceasar Salad")} author={this.getAuthor("Ceasar Salad")} description={this.getDesc("Ceasar Salad")} ingredients={this.getIngredients("Ceasar Salad")} instructions={this.getInstructions("Ceasar Salad")} />
+                <Recipe title={this.getTitle("Ceasar Salad")} author={this.getAuthor("Ceasar Salad")} description={this.getDesc("Ceasar Salad")} ingredients={this.getIngredients("Ceasar Salad")} instructions={this.getInstructions("Ceasar Salad")} />
                 <Footer />
             </React.Fragment>
         );

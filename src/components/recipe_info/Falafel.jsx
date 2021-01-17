@@ -11,7 +11,7 @@ class Falafel extends Component {
         return (
             <React.Fragment>
                 <NavBar />
-                <Recipe name={this.getName("Falafel")} title={this.getTitle("Falafel")} author={this.getAuthor("Falafel")} description={this.getDesc("Falafel")} ingredients={this.getIngredients("Falafel")} instructions={this.getInstructions("Falafel")} />
+                <Recipe title={this.getTitle("Falafel")} author={this.getAuthor("Falafel")} description={this.getDesc("Falafel")} ingredients={this.getIngredients("Falafel")} instructions={this.getInstructions("Falafel")} />
                 <Footer />
             </React.Fragment>
         );

@@ -11,7 +11,7 @@ class MongolianBeef extends Component {
         return (
             <React.Fragment>
                 <NavBar />
-                <Recipe name={this.getName("Mongolian Beef")} title={this.getTitle("Mongolian Beef")} author={this.getAuthor("Mongolian Beef")} description={this.getDesc("Mongolian Beef")} ingredients={this.getIngredients("Mongolian Beef")} instructions={this.getInstructions("Mongolian Beef")} />
+                <Recipe title={this.getTitle("Mongolian Beef")} author={this.getAuthor("Mongolian Beef")} description={this.getDesc("Mongolian Beef")} ingredients={this.getIngredients("Mongolian Beef")} instructions={this.getInstructions("Mongolian Beef")} />
                 <Footer />
             </React.Fragment>
         );

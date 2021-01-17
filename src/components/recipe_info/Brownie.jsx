@@ -11,7 +11,7 @@ class Brownie extends Component {
         return (
             <React.Fragment>
                 <NavBar />
-                <Recipe name={this.getName("Brownie")} title={this.getTitle("Brownie")} author={this.getAuthor("Brownie")} description={this.getDesc("Brownie")} ingredients={this.getIngredients("Brownie")} instructions={this.getInstructions("Brownie")} />
+                <Recipe title={this.getTitle("Brownie")} author={this.getAuthor("Brownie")} description={this.getDesc("Brownie")} ingredients={this.getIngredients("Brownie")} instructions={this.getInstructions("Brownie")} />
                 <Footer />
             </React.Fragment>
         );
