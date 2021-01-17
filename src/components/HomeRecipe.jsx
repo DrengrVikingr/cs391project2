@@ -10,7 +10,7 @@ class HomeRecipe extends Component {
     }
     render() {
         return (
-            <React.Fragment>
+            <React.Fragment classname="align-me">
                 <Media as="li" className="m-5">
                     <img
                         width={424}
