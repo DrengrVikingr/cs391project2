@@ -44,16 +44,21 @@ class SignUp extends Component {
             "surname": this.state.surname,
             "password": this.state.password,
         }
-        /* let emails = [];
- 
-         for (let i = 0; i < localStorage.length; i++) {
-             
-             console.log(user1);
-              if (user.email === this.state.email) {
+        /*  let emails = [];
+  
+          for (let i = 0; i < localStorage.length; i++) {
+  
+              const key = localStorage.key(i);
+              emails.push(key);
+              if (key.email === this.state.email) {
                   alert("This e-mail is already taken");
                   return;
               }
-         }*/
+          }
+  
+          for (let i = 0; i < emails.length; i++) {
+              emails[i] = JSON.parse(emails[i].email);
+          }*/
 
         localStorage.setItem(this.state.email, JSON.stringify(user));
     }
