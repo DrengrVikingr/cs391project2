@@ -26,7 +26,5 @@ Instructions for running the project:
 8) After sign in, user can login through the information user provided.
 9) After logging in user can also logout by clicking on the "Log Out" button from the navigation bar.
 
-External Libraries:
-React-bootstrap
-React Router
+External Libraries: We did not use any external library, we used the required libraries such as React-bootstrap, React Router and React.
 
