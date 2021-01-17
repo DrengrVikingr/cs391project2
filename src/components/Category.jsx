@@ -59,6 +59,7 @@ class Category extends Component {
                     </Carousel>
                     </Col>
                 </Row>
+                
             </Container>
         );
   }
