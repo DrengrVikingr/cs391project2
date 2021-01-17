@@ -13,7 +13,7 @@ Group members and their responisibilites(what did each of us did in this project
 Hasan Bilgin -> 
 Eray Özdayıoğlu -> 
 Yasemin Orhun -> 
-Zeliha Aydın -> 
+Zeliha Aydın -> Categories page design and implementation, creating responsive pages, helping the improvment of other pages
 
 Instructions for running the project:
 1) Download the project.
