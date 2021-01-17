@@ -39,17 +39,10 @@ class NavBar extends Component {
           <Nav>
             <Nav.Link href="/" style={{ color: "white", fontSize: 18, marginRight: '20px', textDecoration: 'none' }}>Home</Nav.Link>
             <Nav.Link href="/categories" style={{ color: "white", fontSize: 18, marginRight: '20px', textDecoration: 'none' }}>Categories</Nav.Link>
-<<<<<<< HEAD
-            <Nav.Link href="/sign_up_login" style={{ color: "white", fontSize: 18, marginRight: '20px', textDecoration: 'none' }}>Sign Up/Login</Nav.Link>
-        </Nav>
-      </div>
-    </Navbar>);
-=======
             <Nav.Link onClick={this.logOut()} href="/sign_up_login" style={{ color: "white", fontSize: 18, marginRight: '20px', textDecoration: 'none' }}>{this.state.isLogged}</Nav.Link>
           </Nav>
         </div>
       </Navbar>);
->>>>>>> def1fe02ed9586c13a02a03e732e761aa9a634ba
   }
 }
 

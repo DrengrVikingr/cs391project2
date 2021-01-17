@@ -11,7 +11,7 @@ export const Login = () => {
                 <br></br>
                 <input type="password" name="password_login" placeholder="Password" required></input>
                 <br></br>
-                <button type="submit" className="btn btn-outline-secondary">Login</button>
+                <button type="submit" className="outline-secondary">Login</button>
                 <br></br>
                 <p id="login_error"></p>
 			</form>
@@ -34,7 +34,7 @@ export const SignUp = () => {
                 <br></br>
                 <input type="password" name="password_sign_up" placeholder="Password" required></input>
                 <br></br>
-                <button type="submit" className="btn btn-outline-secondary">Sign Up</button>
+                <button type="submit" className="outline-secondary">Sign Up</button>
                 <br></br>
                 <p id="sign_up_error"></p>
 			</form>
