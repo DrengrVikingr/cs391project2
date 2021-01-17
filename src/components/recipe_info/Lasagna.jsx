@@ -16,7 +16,7 @@ class Lasagna extends Component {
     }
 
     getName(name) {
-        return "Brownie";
+        return "Lasagna";
     }
     getTitle(name) {
         return "The Most Amazing Lasagna!";
