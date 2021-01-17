@@ -12,7 +12,7 @@ class SignUpLogin extends Component {
         return (
             <React.Fragment>
                 <NavBar />
-                <Container>
+                <Container style={{marginTop:'8rem', marginBottom:'15rem'}}>
                     <Row>
                         <Col> <Login /> </Col>
                         <Col>  <SignUp /> </Col>
