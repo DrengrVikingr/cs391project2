@@ -12,7 +12,7 @@ User's can also signup and login to our website.
 Group members and their responisibilites(what did each of us did in this project?):
 Hasan Bilgin -> 
 Eray Özdayıoğlu -> Sign Up/ Login Page , Authentication, Home Page 
-Yasemin Orhun -> 
+Yasemin Orhun -> Footer and Navbar , Recipe Pages and related content , overall project visual adjustments
 Zeliha Aydın -> Categories page design and implementation, creating responsive pages, helping the improvment of other pages
 
 Instructions for running the project:
@@ -26,7 +26,5 @@ Instructions for running the project:
 8) After sign in, user can login through the information user provided.
 9) After logging in user can also logout by clicking on the "Log Out" button from the navigation bar.
 
-External Libraries:
-React-bootstrap
-React Router
+External Libraries: We did not use any external library, we used the required libraries such as React-bootstrap, React Router and React.
 
