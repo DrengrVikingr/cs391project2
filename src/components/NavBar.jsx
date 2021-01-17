@@ -12,10 +12,11 @@ class NavBar extends Component {
       <Navbar.Brand href="#home">
         <img
           src={Logo}
-          width="60"
-          height="60"
+          width= 'auto'
+          height= 'auto'
           className="d-inline-block align-top"
           alt="React Bootstrap logo"
+          style={{maxHeight: 60, maxWidth: 60}}
         />
         <a class="marmotte" href="/" style={{color:'white'}}>La Marmotte</a>
       </Navbar.Brand>
